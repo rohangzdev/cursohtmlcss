@@ -1,0 +1,40 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    background-color: black;
+    border: none;
+    height: 90px;
+    width: 290px;
+}
+
+.buscador {
+    position: absolute;
+    border-radius: 15px;
+    width: 215px;
+    height: 25px;
+    top: 35px;
+    left: 25px;
+    background-color: rgb(84, 73, 92);
+    padding: 5px;
+    border: none;
+
+
+}
+
+.boton-redondo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(235, 46, 140);
+    top: 23px;
+    left: 220px;
+    position: absolute;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+
+
+}
