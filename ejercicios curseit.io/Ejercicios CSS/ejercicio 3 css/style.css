@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.cuadrado1 {
+    background-color: aquamarine;
+}
+
+.cuadrado2 {
+    background-color: royalblue;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    
+}
+
+.cuadrado3 {
+    background-color: brown;
+}
