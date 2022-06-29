@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: #561298;
+        transition: 1s all;
+      }
+      .container1 {
+        width: 200px;
+        height: 200px;
+        background-color: #569998;
+        transition: 1s all;
+      }
+      .containerb {
+        width: 200px;
+        height: 200px;
+        background-color: #179918;
+        transition: 1s all;
+      }
+      .bigBox {
+        width: 400px;
+        transition: 1s all;
+      }
+    </style>
+    <div id="container" class="container"></div>
+    <button onclick="addBigBox()">agrandar</button>
+    <button onclick="removeBigBox()">achicar</button>
+
+    <div id="container1" class="container1"></div>
+    <button onclick="toggleBigBox('add')">agrandar</button>
+    <button onclick="toggleBigBox('remove')">achicar</button>
+
+    <div id="containerb" class="containerb"></div>
+    <button onclick="nBigBox()">agrandar</button>
+
+    <script>
+      // normal
+      const container = document.getElementById("container");
+
+      function addBigBox() {
+        container.classList.add("bigBox");
+      }
+
+      function removeBigBox() {
+        container.classList.remove("bigBox");
+      }
+
+      // con toggle
+      const containerb = document.getElementById("containerb");
+
+      function nBigBox() {
+        containerb.classList.toggle("bigBox");
+      }
+
+      //con booleano
+      const container1 = document.getElementById("container1");
+
+      function toggleBigBox(action) {
+        if (action == "add") {
+          container1.classList.add("bigBox");
+        } else if (action == "remove") {
+          container1.classList.remove("bigBox");
+        } else {
+          console.log("accion invalida");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="count">Primero</li>
+        <li class="count">Segundo</li>
+      </ul>
+      <span id="result"></span>
+    </nav>
+    <div>
+      <p id="firstp" class="p">Soy el primer parrafo</p>
+      <p class="p">Soy el segundo parrafo</p>
+    </div>
+    <p>Soy el tercer parrafo</p>
+    <script>
+      const liLength = document.getElementsByClassName("count").length;
+      const result = document.getElementById("result");
+      result.innerHTML = `Actualmente tenemos ${liLength} lis`;
+    </script>
+  </body>
+</html>
